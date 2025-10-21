@@ -74,3 +74,12 @@ modeSwitch.addEventListener("change", () => {
     body.style.background = "linear-gradient(135deg, #74ebd5, #acb6e5)";
   }
 });
+
+// Trigger getWeather when Enter is pressed
+const cityInput = document.getElementById("cityInput");
+
+cityInput.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    getWeather();
+  }
+});
