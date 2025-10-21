@@ -78,8 +78,10 @@ modeSwitch.addEventListener("change", () => {
 // Trigger getWeather when Enter is pressed
 const cityInput = document.getElementById("cityInput");
 
-cityInput.addEventListener("keypress", function(event) {
+cityInput.addEventListener("keydown", function(event) {
   if (event.key === "Enter") {
+    event.preventDefault(); // prevent page reload
     getWeather();
   }
 });
+
