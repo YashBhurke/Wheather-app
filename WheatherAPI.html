@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="WheatherAPI.css">
+</head>
+<body>
+  <div class="weather-container">
+    <!-- Dark/Light Mode Toggle -->
+    <div class="mode-toggle">
+      <label class="switch">
+        <input type="checkbox" id="modeSwitch">
+        <span class="slider"></span>
+      </label>
+      <p id="modeLabel">Light Mode</p>
+</div>
+    <h2>Weather App</h2>
+
+    <!-- Weather Search -->
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+
+    <!-- Weather Result -->
+    <div id="weatherResult"></div>
+  </div>
+
+  <script src="WheatherAPI.js"></script>
+</body>
+</html>
